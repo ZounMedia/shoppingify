@@ -13,7 +13,7 @@ const SideNav: FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <AiFillHeart color="#F9A109" />
+        <AiFillHeart color="#F9A109" size={20} />
       </div>
       <div className={styles.navItems}>
         <div

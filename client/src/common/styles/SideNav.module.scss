@@ -1,12 +1,14 @@
+@import "./colors.module.scss";
+
 .container {
   height: 100vh;
-  background-color: white;
+  background-color: $white;
   width: 61.58px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 5px 0 5px -5px #333;
+  box-shadow: 5px 0 5px -5px $secondary;
 
   .logo {
     margin-top: 33px;
@@ -15,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3f3d56;
+    background-color: $secondary;
     border-radius: 50%;
   }
 
@@ -36,7 +38,7 @@
 
       &.active {
         border-radius: 0px 4px 4px 0px;
-        border-left: 6px solid #f9a109;
+        border-left: 6px solid $primary;
       }
     }
   }
@@ -48,7 +50,7 @@
     height: 40px;
     width: 40px;
     margin-bottom: 33px;
-    background-color: #f9a109;
+    background-color: $primary;
     border-radius: 50%;
 
     .quantity {
@@ -60,8 +62,8 @@
       position: absolute;
       bottom: 60px;
       left: 38px;
-      background-color: red;
-      color: white;
+      background-color: $red;
+      color: $white;
       font-size: 0.6rem;
       border-radius: 4px;
     }

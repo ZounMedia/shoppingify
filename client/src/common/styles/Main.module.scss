@@ -1,6 +1,8 @@
+@import "./colors.module.scss";
+
 .container {
   width: 82%;
-  background-color: #edecec;
+  background-color: $main-background;
   height: 100vh;
   flex: auto;
   overflow-y: auto;
