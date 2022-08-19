@@ -25,6 +25,19 @@
     justify-content: space-around;
     align-items: center;
     height: 290px;
+    width: 100%;
+
+    .navItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 46px;
+      width: 100%;
+
+      &.active {
+        border-left: 6px solid #f9a109;
+      }
+    }
   }
 
   .cart {
