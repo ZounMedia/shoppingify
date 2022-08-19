@@ -15,11 +15,23 @@ const SideNav: FC = () => {
         <AiFillHeart color="#F9A109" />
       </div>
       <div className={styles.navItems}>
-        <ImList2 color="#454545" size={20} />
+        <ImList2
+          onClick={() => dispatch(handleNavTab(NavTabs.shoppingList))}
+          color="#454545"
+          size={20}
+        />
 
-        <FaHistory color="#454545" size={20} />
+        <FaHistory
+          onClick={() => dispatch(handleNavTab(NavTabs.shoppingHistory))}
+          color="#454545"
+          size={20}
+        />
 
-        <ImStatsBars color="#454545" size={20} />
+        <ImStatsBars
+          onClick={() => dispatch(handleNavTab(NavTabs.shoppingStats))}
+          color="#454545"
+          size={20}
+        />
       </div>
       <div className={styles.cart}>
         <AiOutlineShoppingCart color="white" size={20} />

@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 const ShoppingStats: FC = () => {
-  return <div>TopItems</div>;
+  return <div>ShoppingStats</div>;
 };
 
 export default ShoppingStats;
