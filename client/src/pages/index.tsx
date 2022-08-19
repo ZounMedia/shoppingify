@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Main from "@components/main/Main";
 import type { NextPage } from "next";
 import SideNav from "../common/components/nav/SideNav";
 import styles from "@styles/Home.module.scss";
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SideNav />
-      <main className=""></main>
+      <Main />
     </div>
   );
 };

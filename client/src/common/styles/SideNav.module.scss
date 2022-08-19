@@ -1,11 +1,12 @@
 .container {
   height: 100vh;
-  border-right: 1px solid black;
-  width: 18%;
+  background-color: white;
+  width: 61.58px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 5px 0 5px -5px #333;
 
   .logo {
     margin-top: 33px;
