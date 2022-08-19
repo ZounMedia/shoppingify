@@ -1,4 +1,6 @@
-const ShoppingStats = () => {
+import { FC } from "react";
+
+const ShoppingStats: FC = () => {
   return <div>TopItems</div>;
 };
 

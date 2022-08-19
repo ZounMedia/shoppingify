@@ -1,4 +1,6 @@
-const ShoppingList = () => {
+import { FC } from "react";
+
+const ShoppingList: FC = () => {
   return <div>ShoppingList</div>;
 };
 

@@ -1,6 +1,7 @@
+import { FC } from "react";
 import styles from "@styles/Main.module.scss";
 
-const Main = () => {
+const Main: FC = () => {
   return <main className={styles.container}>Main</main>;
 };
 

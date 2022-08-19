@@ -1,4 +1,6 @@
-const ShoppingHistory = () => {
+import { FC } from "react";
+
+const ShoppingHistory: FC = () => {
   return <div>ShoppingHistory</div>;
 };
 
