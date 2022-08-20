@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .category {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+}
