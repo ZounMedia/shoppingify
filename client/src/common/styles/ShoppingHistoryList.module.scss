@@ -1,0 +1,18 @@
+@import "colors.module.scss";
+
+.container {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  .date {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
