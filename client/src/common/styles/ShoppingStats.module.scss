@@ -1,0 +1,16 @@
+@import "colors.module.scss";
+
+.container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+
+  .section {
+    margin-bottom: 30px;
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "colors.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  height: auto;
+
+  .items {
+    width: 100%;
+
+    .item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 33px;
+      margin-top: 10px;
+
+      .itemDetails {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .name,
+        .percent {
+          font-weight: 500;
+        }
+
+        .name {
+          font-size: 14px;
+        }
+
+        .percent {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
