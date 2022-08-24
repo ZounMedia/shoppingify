@@ -1,4 +1,4 @@
-@import "colors.module.scss";
+@import "constants.module.scss";
 
 .container {
   padding: 0 10px 0 10px;
@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: $mobile) {
   .container {
     .details {
       .date,
@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .container {
     padding: 0 5% 0 5%;
     .details {
