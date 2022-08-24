@@ -1,7 +1,7 @@
 @import "colors.module.scss";
 
 .container {
-  padding: 0 6px 0 6px;
+  padding: 0 10px 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,17 +24,39 @@
     align-items: center;
     justify-content: space-between;
 
-    .date {
-      font-size: 0.5rem;
-    }
-
-    .status {
+    .date,
+    .status,
+    .action {
       font-size: 0.5rem;
     }
 
     .action {
-      font-size: 0.5rem;
       color: $primary;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .container {
+    .details {
+      .date,
+      .status,
+      .action {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 5% 0 5%;
+    .details {
+      .date,
+      .status,
+      .action {
+        font-size: 0.8rem;
+      }
     }
   }
 }
