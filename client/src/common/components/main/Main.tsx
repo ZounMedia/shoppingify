@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { NavTabs } from "@modules/nav/navSlice";
 import ShoppingHistory from "@modules/shopping-history/ShoppingHistory";
-import ShoppingList from "@modules/shopping-list/ShoppingList";
+import ShoppingItems from "@modules/shopping-items/ShoppingItems";
 import ShoppingStats from "@modules/shopping-stats/ShoppingStats";
 import styles from "@styles/Main.module.scss";
 import { useAppSelector } from "@app/hooks";
@@ -16,7 +16,7 @@ const Main: FC = () => {
       case NavTabs.shoppingHistory:
         return <ShoppingHistory />;
       default:
-        return <ShoppingList />;
+        return <ShoppingItems />;
     }
   };
   return <main className={styles.container}>{renderSection()}</main>;
