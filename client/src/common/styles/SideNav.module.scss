@@ -69,3 +69,9 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .container {
+    width: 93.92px;
+  }
+}
