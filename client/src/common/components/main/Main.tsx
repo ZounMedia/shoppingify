@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { NavTabs } from "@modules/nav/navSlice";
+import { NavTabs } from "@components/nav/navSlice";
 import ShoppingHistory from "@modules/shopping-history/ShoppingHistory";
 import ShoppingItems from "@modules/shopping-items/ShoppingItems";
 import ShoppingStats from "@modules/shopping-stats/ShoppingStats";
