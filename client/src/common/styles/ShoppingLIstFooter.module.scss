@@ -25,6 +25,8 @@
       height: 100%;
       width: 223px;
       border: none;
+      font-size: 14px;
+      font-weight: 500;
       margin-left: 15px;
       &:active,
       &::after,
@@ -42,6 +44,9 @@
       font-size: 16px;
       color: white;
       border: none;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

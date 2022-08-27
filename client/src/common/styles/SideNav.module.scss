@@ -40,6 +40,10 @@
         border-radius: 0px 4px 4px 0px;
         border-left: 6px solid $primary;
       }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -52,6 +56,9 @@
     margin-bottom: 33px;
     background-color: $primary;
     border-radius: 50%;
+    &:hover {
+      cursor: pointer;
+    }
 
     .quantity {
       display: flex;
@@ -73,5 +80,11 @@
 @media (min-width: $desktop) {
   .container {
     width: 93.92px;
+
+    .cart {
+      .quantity {
+        left: 45px;
+      }
+    }
   }
 }
