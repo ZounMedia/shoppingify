@@ -21,7 +21,7 @@ const ShoppingListHeader: FC = () => {
       </div>
       <div className={styles.itemTitle}>
         <input
-          style={{ backgroundColor: `${editTitle ? "white" : ""}` }}
+          style={{ backgroundColor: `${editTitle ? "white" : "transparent"}` }}
           type="text"
           value={title}
           required

@@ -1,8 +1,10 @@
 @import "./constants.module.scss";
 
 .container {
+  overflow-y: auto;
   height: 100vh;
   width: 389px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,9 +14,9 @@
   background-color: $secondary-background;
 
   .itemsContainer {
-    height: 100%;
     width: 100%;
     overflow-y: auto;
+    margin-bottom: 105px;
   }
 
   @media (max-width: $tablet) {

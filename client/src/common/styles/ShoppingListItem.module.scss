@@ -1,0 +1,28 @@
+@import "constants.module.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+
+  .name {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 32px;
+    border-radius: 24px;
+    color: $primary;
+    border: 2px solid $primary;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

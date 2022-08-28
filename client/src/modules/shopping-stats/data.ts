@@ -15,7 +15,7 @@ export const topItems = [
 
 export const topCategories = [
   {
-    name: "Fruites and Vegitables",
+    name: "Fruites and Vegetables",
     percent: 23,
   },
   {

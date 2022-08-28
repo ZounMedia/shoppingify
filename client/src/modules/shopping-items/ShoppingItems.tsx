@@ -4,7 +4,7 @@ import { shoppingItems } from "./data";
 import styles from "@styles/ShoppingItems.module.scss";
 
 const ShoppingItems: FC = () => {
-  const categories = ["Fruits and Vegitables", "Meat and Fish", "Beverages"];
+  const categories = ["Fruits and Vegetables", "Meat and Fish", "Beverages"];
 
   return (
     <div className={styles.container}>
