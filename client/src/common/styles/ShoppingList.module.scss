@@ -17,6 +17,12 @@
     width: 100%;
     overflow-y: auto;
     margin-bottom: 105px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 
   @media (max-width: $tablet) {

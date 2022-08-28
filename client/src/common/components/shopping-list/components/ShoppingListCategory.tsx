@@ -21,7 +21,11 @@ const ShoppingListCategory: FC<Props> = ({ category, items }) => {
         {items
           .filter((item: Item) => item.category === category)
           .map((item: Item, idx) => (
-            <ShoppingListItem name={item.name} quantity={item.quantity} />
+            <ShoppingListItem
+              key={idx}
+              name={item.name}
+              quantity={item.quantity}
+            />
           ))}
       </div>
     </div>
