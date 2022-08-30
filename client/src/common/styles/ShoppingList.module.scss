@@ -25,7 +25,15 @@
     scrollbar-width: none; /* Firefox */
   }
 
-  @media (max-width: $tablet) {
+  @media (min-width: $tablet-lg) {
     display: none;
+  }
+
+  @media (max-width: $mobile) {
+    width: 330px;
+  }
+
+  @media (max-width: $mobile-s) {
+    width: 300px;
   }
 }

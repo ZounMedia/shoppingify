@@ -19,8 +19,9 @@ const ShoppingHistoryList: FC<Props> = ({ date, items }) => {
       <div className={styles.date}>{date}</div>
       <div className={styles.items}>
         {items &&
-          items.map((item: ItemDetails) => (
+          items.map((item: ItemDetails, idx: number) => (
             <ShoppingHistoryItem
+              key={idx}
               title={item.title}
               date={item.date}
               status={item.status}

@@ -7,10 +7,11 @@
   flex: auto;
   overflow-y: auto;
   padding: 10% 3% 0 3%;
-}
 
-// @media (min-width: $desktop) {
-//   .container {
-//     width: calc(82% - 327.43px);
-//   }
-// }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

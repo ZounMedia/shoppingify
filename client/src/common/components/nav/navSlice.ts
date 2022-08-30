@@ -9,10 +9,12 @@ export enum NavTabs {
 
 export interface NavState {
   currentTab: NavTabs;
+  drawerOpen: boolean;
 }
 
 const initialState: NavState = {
   currentTab: NavTabs.shoppingList,
+  drawerOpen: false,
 };
 
 export const navSlice = createSlice({
@@ -22,9 +24,12 @@ export const navSlice = createSlice({
     handleNavTab: (state, action: PayloadAction<NavTabs>) => {
       state.currentTab = action.payload;
     },
+    handleDrawerOpen: (state) => {
+      state.drawerOpen = !state.drawerOpen;
+    },
   },
 });
 
-export const { handleNavTab } = navSlice.actions;
+export const { handleNavTab, handleDrawerOpen } = navSlice.actions;
 
 export default navSlice.reducer;

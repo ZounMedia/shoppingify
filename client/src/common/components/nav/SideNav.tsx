@@ -1,6 +1,6 @@
 import { AiFillHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { ImList2, ImStatsBars } from "react-icons/im";
-import { NavTabs, handleNavTab } from "./navSlice";
+import { NavTabs, handleDrawerOpen, handleNavTab } from "./navSlice";
 import { useAppDispatch, useAppSelector } from "@app/hooks";
 
 import { FC } from "react";
@@ -10,6 +10,7 @@ import styles from "@styles/SideNav.module.scss";
 const SideNav: FC = () => {
   const dispatch = useAppDispatch();
   const currentTab = useAppSelector((state) => state.nav.currentTab);
+  const toggleDrawer = () => dispatch(handleDrawerOpen());
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
@@ -52,7 +53,7 @@ const SideNav: FC = () => {
           />
         </div>
       </div>
-      <div className={styles.cart}>
+      <div className={styles.cart} onClick={toggleDrawer}>
         <AiOutlineShoppingCart color="white" size={20} />
         <div className={styles.quantity}>5</div>
       </div>
