@@ -1,6 +1,21 @@
+@import "./constants.module.scss";
+
 .container {
   height: 100vh;
   width: 100vw;
   overflow: auto;
   display: flex;
+
+  .shoppingListContainer {
+    height: 100vh;
+    width: 389px;
+    position: relative;
+    display: none;
+  }
+
+  @media (min-width: $tablet-lg) {
+    .shoppingListContainer {
+      display: inherit;
+    }
+  }
 }

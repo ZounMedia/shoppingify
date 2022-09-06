@@ -7,10 +7,6 @@
   right: 0;
   background-color: blue;
 
-  @media (min-width: $tablet-lg) {
-    display: none;
-  }
-
   @media (max-width: $mobile) {
     width: 330px;
   }

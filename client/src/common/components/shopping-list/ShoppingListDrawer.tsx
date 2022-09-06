@@ -20,7 +20,12 @@ const ShoppingListDrawer: FC = () => {
   };
 
   return (
-    <Drawer open={drawerOpen} onClose={toggleDrawer} direction="right">
+    <Drawer
+      open={drawerOpen}
+      onClose={toggleDrawer}
+      direction="right"
+      customIdSuffix="shopping-list-drawer"
+    >
       <div className={styles.container}>
         <ShoppingList />
       </div>

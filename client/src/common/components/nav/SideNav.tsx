@@ -1,16 +1,26 @@
 import { AiFillHeart, AiOutlineShoppingCart } from "react-icons/ai";
+import { FC, useEffect, useState } from "react";
 import { ImList2, ImStatsBars } from "react-icons/im";
 import { NavTabs, handleDrawerOpen, handleNavTab } from "./navSlice";
 import { useAppDispatch, useAppSelector } from "@app/hooks";
 
-import { FC } from "react";
 import { FaHistory } from "react-icons/fa";
 import styles from "@styles/SideNav.module.scss";
 
 const SideNav: FC = () => {
   const dispatch = useAppDispatch();
   const currentTab = useAppSelector((state) => state.nav.currentTab);
-  const toggleDrawer = () => dispatch(handleDrawerOpen());
+  const [screenWidth, setSreenWidth] = useState(0);
+  const toggleDrawer = () => screenWidth < 912 && dispatch(handleDrawerOpen());
+
+  useEffect(() => {
+    const handleWindowResize = () => setSreenWidth(window.innerWidth);
+    handleWindowResize();
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [screenWidth]);
   return (
     <div className={styles.container}>
       <div className={styles.logo}>

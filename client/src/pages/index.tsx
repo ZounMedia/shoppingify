@@ -17,8 +17,10 @@ const Home: NextPage = () => {
         </Head>
         <SideNav />
         <Main />
+        <div className={styles.shoppingListContainer}>
+          <ShoppingList />
+        </div>
         <ShoppingListDrawer />
-        <ShoppingList />
       </div>
     </>
   );
